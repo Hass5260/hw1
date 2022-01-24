@@ -93,3 +93,130 @@
 
 -- The SQL statement for the cast output
 -- TODO!
+
+DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS characters
+
+CREATE TABLE movies (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  year INTEGER,
+  rating TEXT,
+  director TEXT
+) ;
+
+CREATE TABLE actors (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name_ TEXT
+) ;
+
+CREATE TABLE characters (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  character_ TEXT,
+  movies_id INTEGER,
+  actors_id INTEGER
+) ;
+
+INSERT INTO movies (
+    title,
+    year,
+    rating,
+    director
+)
+VALUES (
+    "Batman Begins",
+    2005,
+    "PG-13",
+    "Christopher Nolan"
+);
+INSERT INTO movies (
+    title,
+    year,
+    rating,
+    director
+)
+VALUES (
+    "The Dark Knight",
+    2008,
+    "PG-13",
+    "Christopher Nolan"
+);
+INSERT INTO movies (
+    title,
+    year,
+    rating,
+    director
+)
+VALUES (
+    "The Dark Knight Rises",
+    2012,
+    "PG-13",
+    "Christopher Nolan"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Christian Bale"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Michael Caine"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Liam Neeson"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Katie Holmes"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Gary Oldman"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Heath Ledger"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Aaron Eckhart"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Maggie Gyllenhaal"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Tom Hardy"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Joseph Gordon-Levitt"
+);
+INSERT INTO actors (
+    name_
+)
+VALUES (
+    "Anne Hathaway"
+);
